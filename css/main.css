@@ -96,55 +96,18 @@ textarea {
    ========================================================================== */
 
 html {
-  background-color: #fff;
+  background-color: #222;
   height: 100%;
   width: 100%;
 }
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  display: flex;
+  justify-content: center;
+  font-family: 'IBM Plex Sans', sans-serif;
   padding: 0 2em;
   font-size: 1.25em;
-  height: 100%;
   color: #fff;
-}
-
-header,
-footer {
-  background-color: #222;
-  height: 80px;
-  width: 100%;
-}
-
-main {
-  background-color: #ccc;
-  height: 250px;
-  width: 100%;
-}
-
-header,
-footer,
-main {
-  /*set display to flex and vertically & horizontally align by setting justify-content and align-items to center*/
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#div-1,
-#div-2,
-#div-3 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  line-height: 1.5em;
-  font-size: 1.25em;
-}
-
-.wrapper span {
-  font-family: 'Lora', sans-serif;
-  font-size: 1.3em;
 }
 
 .flex-container {
@@ -155,19 +118,74 @@ main {
   flex-flow: row wrap;
 }
 
+header,
+footer {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+header h1 {
+  font-family: 'IBM Plex Serif', serif;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border-bottom: 1px solid #fff;
+}
+
+main p {
+  font-size: 1.35em;
+}
+
+main p span {
+  font-family: 'IBM Plex Serif', serif;
+}
+
 .flex-items {
-  /*set display to flex and vertically & horizontally align by setting justify-content and align-items to center*/
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
   line-height: 1.5em;
-  font-size: 1.6em;
-  background-color: #f16059;
+  font-size: 1em;
   width: 30%;
-  height: 200px;
 }
 
+.flex-items p span {
+  font-family: 'IBM Plex Serif', serif;
+}
+
+.vl {
+  display: flex;
+  height: 6em;
+  width: 1px;
+  background-color: #fff;
+}
+
+footer {
+  border-top: 1px solid #fff;
+}
+
+footer ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+}
+
+footer ul li {
+  display: inline-block;
+  list-style: none;
+}
+
+ul li a {
+  text-decoration: none;
+  padding-right: 0.6em;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
